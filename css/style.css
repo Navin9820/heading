@@ -1,0 +1,498 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.container{
+	width: 1170px;
+	margin: 0 auto;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.row{
+	display: flex;
+	flex-wrap: wrap;
+	margin-right: -15px;
+	margin-left: -15px;
+}
+
+.col-lg-1{
+	width: 8.33%;
+	padding: 0 15px;
+}
+
+.col-lg-2{
+	width: 16.66%;
+	padding: 0 15px;
+}
+
+.col-lg-3{
+	width: 25%;
+	padding: 0 15px;
+}
+
+.col-lg-4{
+	width: 33.33%;
+	padding: 0 15px;
+}
+
+.col-lg-5{
+	width: 41.66%;
+	padding: 0 15px;
+}
+
+.col-lg-6{
+	width: 50%;
+	padding: 0 15px;
+}
+
+.col-lg-7{
+	width: 58.33%;
+	padding: 0 15px;
+}
+
+.col-lg-8{
+	width: 66.66%;
+	padding: 0 15px;
+}
+
+.col-lg-9{
+	width: 75%;
+	padding: 0 15px;
+}
+
+.col-lg-10{
+	width: 83.33%;
+	padding: 0 15px;
+}
+
+.col-lg-11{
+	width: 91.66%;
+	padding: 0 15px;
+}
+
+.col-lg-12{
+	width: 100%;
+	padding: 0 15px;
+}
+/*--------- Flex Styles ----------*/
+
+.align-items-center{
+	align-items: center !important;
+
+}
+
+.align-items-start{
+	align-items: flex-start !important;
+}
+
+.align-items-end{
+	align-items: flex-end !important;
+}
+
+.align-items-baseline{
+	align-items: baseline !important;
+}
+
+.align-items-strecth{
+	align-items: stretch !important;
+}
+
+/*--------- Header-Section Starts --------------*/
+
+.header-menu{
+	background: #f5f5f5;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.logo a{
+	text-decoration: none;
+	color: #000;
+	font-size: 30px;
+	font-weight: 700;
+	display: inline-block;
+}
+
+.logo a span{
+	color: #e03a3c;
+}
+
+.menu-bar > .nav-bar{
+	text-align: right;
+}
+
+.menu-bar .nav-bar > li{
+	display: inline-block;
+}
+
+.nav-bar  > li a.nav-list{
+	display: block;
+	text-decoration: none;
+	color: #000;
+	font-size: 14px;
+	padding-left: 14px;
+	padding-right: 14px;
+	padding-bottom: 10px;
+	padding-top: 10px;
+	transition: all 0.3s ease;
+}
+
+.nav-bar > li a.nav-list:hover{
+	color: #e03a3c;
+}
+
+.btns{
+	display: inline-block;
+	text-decoration: none;
+	text-align: center;
+	padding: 8px 25px;
+	background-color: #e03a3c;
+	color: #fff;
+	border-radius: 5px;
+	font-size: 16px;
+}
+
+.nav-btn{
+	font-size: 14px;
+}
+
+.dropdown{
+	position: relative;
+	padding:2px ;
+}
+
+.dropdown-nav{
+	position: absolute;
+	top: 100%;
+	left: 0;
+	min-width: 190px;
+	background-color: #fff;
+	box-shadow: 1px -2px 18px -6px #ccc;
+	padding: 15px 10px;
+	border-radius: 10px;
+	text-align: left;
+	transform: translateY(20px);
+	opacity: 0;
+	visibility: hidden;
+	transition: all 0.3s ease;
+}
+
+.nav-bar > li.dropdown > a .nav-list{
+	padding-right: 25px;
+
+}
+.dropdown a > .icofont-curved-down{
+	position: absolute;
+	top: 14px;
+	right: 0;
+}
+
+.dropdown:hover .dropdown-nav{
+	transform: translateY(0);
+	opacity: 1;
+	visibility: visible;
+}
+
+.dropdown-nav li{
+	display: block;
+}
+
+.dropdown-nav li a{
+	color: #000;
+	font-size: 14px;
+	display: block;
+	text-decoration: none;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.dropdown-sub{
+	position: relative;
+}
+.dropdown-nav-sub{
+	position: absolute;
+	top: 0;
+	left: 100%;
+	min-width: 190px;
+	background-color: #fff;
+	box-shadow: 1px -2px 18px -6px #ccc;
+	padding: 15px 10px;
+	border-radius: 10px;
+	text-align: left;
+	transform: translateX(-15px);
+	opacity: 0;
+	visibility: hidden;
+	transition: all 0.3s ease;
+}
+
+.dropdown-sub:hover .dropdown-nav-sub{
+	transform: translateX(0);
+	opacity: 1;
+	visibility: visible;
+}
+/*----------- Header-Section Ends ----------------*/
+
+/*------------ Banner-Section Starts -------------
+
+.banner-section{
+	background: palegoldenrod;
+	height: 600px;
+	padding: 150px 0;
+}
+
+.banner-content{
+	background-color: ghostwhite;
+	height: 300px;
+}
+
+/*--------------- Banner-Section Ends ----------------
+
+/*--------------- Clients-Section Starts ---------------
+
+.clients-section{
+	padding-top: 80px;
+	padding-bottom: 80px;
+	background-color: orange
+}
+
+.clients-logo{
+	background-color: gold;
+	height: 60px;
+}
+
+/*-------------- Clients-Section Ends -------------------*/
+
+/*--------------- About-Section Starts -------------------
+
+.about-selection{
+	padding: 28px;
+	background-color: #222;
+}
+
+.about-content{
+	background-color: olivedrab;
+	height: 400px;
+}
+
+.about-list-box{
+	background-color: darkred;
+	height: 170px;
+	margin-bottom: 20px;
+}
+
+/*------------- About-Section Ends -------------------*/
+
+/*------------- Tab-Section Starts --------------------
+
+.tab{
+	background-color: olivedrab;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+.tab-content{
+	background-color: gold;
+	height: 100px;
+}
+
+/*------------ Tab-Section Ends ----------------------*/
+
+/*------------ New-Tab-Section Starts -----------------
+
+.new-tab{
+	background-color: blue;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+.new-tab-content{
+	background-color: greenyellow;
+	height: 100px;
+}
+
+/*-------------- New-Tab-Section Ends ----------------*/
+
+/*-------------- Box-Tab-Section Starts --------------
+
+.box-tab{
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.box-content{
+	background-color: gold;
+	height: 170px;
+	margin-bottom: 20px;
+}
+
+/*-------------- Box-Tab-Section Ends --------------*/
+
+/*-------------- Service-Section Starts ------------
+
+.service{
+	background-color: purple;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	
+}
+
+.service-content{
+	background-color: palegoldenrod;
+	height: 100px;
+}
+
+/*-------------- Service-Section Ends ------------*/
+
+/*-------------- Portofolio-Section Starts ----------
+
+.portofolio{
+	background-color: orange;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+.portofolio-content{
+	background-color: pink;
+	height: 300px;
+}
+
+.portofolio-new{
+	background-color: orange;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+.portofolio-content-new{
+	background-color: pink;
+	height: 300px;
+}
+
+.portofolio-new-tab{
+	background-color: orange;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+.portofolio-content-new-tab{
+	background-color: pink;
+	height: 300px;
+}
+
+/*-------------- Portofolio-Section Ends----------------*/
+
+/*-------------- Testimonials-Section Starts -------------*
+
+.testimonials{
+	background-color: pink;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+.testimonials-content{
+	background-color: palegreen;
+	height: 150px;
+}
+
+/*--------------- Testimonials-Section Ends -----------------*
+
+/*--------------- Pricing-Section Starts --------------------*
+
+.pricing{
+	background-color: gold;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+.pricing-content{
+	background-color: whitesmoke;
+	height: 350px;
+}
+
+/*-------------- Pricing-Section Ends ----------------------*
+
+/*-------------- Question-Section Starts ------------------*
+
+.question{
+	background-color: blueviolet;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+.question-content{
+	background-color: grey;
+	height: 200px;
+}
+
+/*------------- Question-Section Ends ---------------*
+
+/*------------- Team-Section Starts ---------------*
+
+.team{
+	background-color: hotpink;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+.team-content{
+	background-color: greenyellow;
+	height: 150px;
+}
+
+/*------------- Team-Section Ends ---------------*/
+
+/*------------- Contact-Section Starts --------------*
+
+.contact{
+	padding: 28px;
+	background-color: #222;
+}
+
+.contact-content{
+	background-color: olivedrab;
+	height: 300px;
+}
+
+.contact-list-box{
+	background-color: darkred;
+	height: 170px;
+	margin-bottom: 20px;
+}
+
+/*------------- Contact-Section Ends -----------------*/
+
+/*------------- Description-Section Starts ------------/
+
+.description{
+	background-color: gold;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+.description-content{
+	background-color: darkred;
+	height: 150px;
+}
+
+/*------------- Description-Section Ends ---------------*/
+
+/*------------- Copyrights-Section Starts ---------------*
+
+.copyrights-menu{
+	background-color: black;
+}
+
+.copyrights-logo{
+	background-color: blue;
+	height: 50px;
+}
+
+.copyrights-bar{
+	background-color: blue;
+	height: 50px;
+}
+/*
